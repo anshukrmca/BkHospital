@@ -7,8 +7,8 @@
 
     <form id="loginforrm1">
         <div class="login_div"> 
-            <div class=" mt-5 mx-5 py-5 px-2">
-                <h2 class="text-center my-2 text-warning"><u><b>Sign In..! or login</b></u></h2>
+            <div class=" mt-5 mx-5 py-3 px-2">
+                <h2 class="text-center my-2 text-warning"><u><b>Sign In..!</b></u></h2>
                 <div class="container">
                     <div class="mb-3">
                         <label for="txtuserName" class="form-label">User Name</label>
@@ -23,10 +23,10 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                         <label class="form-check-label" for="exampleCheck1">Remember me..!</label>
                     </div>
-                    <asp:Button ID="btnSave" runat="server" Text="Login" class="btn btn-success mx-3" />
+                    <asp:Button ID="btnSave" runat="server" Text="Login" class="btn btn-success mx-3 my-2" />
                     <a href="Home.aspx" class="btn">Back</a>
-                    <a></a>
                 </div>
+               <p class="nav-link text-light">You haven't account..! <a href="UserRegistration.aspx" class="text-success">Sign Up</a></p>
             </div>
         </div>
     </form>

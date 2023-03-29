@@ -33,7 +33,7 @@
             <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a href="#" class="navbar-brand">
+            <a href="Home.aspx" class="navbar-brand">
                     <h4 class="m-0 text-uppercase text-warning"><i class="fa fa-clinic-medical me-2"></i>NEW B.K HoSpItAl</h4>
                 </a>
 
@@ -70,15 +70,14 @@
                      <li class="nav-item">
                         <a class="nav-link" href="Appointment.aspx">Appintment</a>
                     </li>
-                    
-                </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="UserLogin.aspx" class="tooltiplink" data-title="login here">
-                            <i class="fa fa-2x fa-stethoscope text-warning"></i>
+                    <li class="nav-item">
+                         <a href="UserLogin.aspx" class="nav-link  tooltiplink" data-title="login here">
+                         <i class="fa fa-2x fa-stethoscope text-warning"></i>
+                            Login
                         </a>
-                    </span>
-                </span>
+                    </li>
+                </ul>
+               
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
