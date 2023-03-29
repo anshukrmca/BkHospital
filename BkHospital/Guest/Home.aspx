@@ -11,7 +11,7 @@
             <p class="para para-light py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus tempore accusamus quis magnam doloremque itaque ad modi, pariatur iste labore similique officiis impedit aspernatur aperiam facere architecto. Eligendi, repellendus inventore!</p>
             <div class="d-flex align-items-center">
                 <p class="p-2"><i class="fas fa-laptop-house fa-lg"></i></p>
-                <p>Lorem ipsum dolor sit amet.</p>  
+                <p>Lorem ipsum dolor sit amet.></p>  
             </div>
             <div class="d-flex align-items-center">
                 <p class="p-2"><i class="fas fa-wifi fa-lg"></i></p>
