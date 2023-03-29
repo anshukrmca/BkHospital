@@ -709,7 +709,7 @@ li {
 
 /*tooltip */
 
-a.tooltiplink {
+/*a.tooltiplink {
 	position: relative;
 }
 
@@ -728,7 +728,7 @@ a.tooltiplink {
 		transform: translateX(-50%);
 		white-space: nowrap;
 		z-index: 1;
-	}
+	}*/
 
 /*userlogin design css*/
 
@@ -736,7 +736,15 @@ a.tooltiplink {
 	color: white;
 	width: 25rem;
 	margin:5rem auto;
-	height: 30rem;
+	border-radius: 30px 0px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.registration_div {
+	color: white;
+	width:60%;
+	margin: 5rem auto;
 	border-radius: 30px 0px;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

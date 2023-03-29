@@ -4,8 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-   <!-- Contact -->
-    <section class="contact d-flex align-items-center py-5 my-5" id="contact">
+   <!-- appointment -->
+    <section class="contact d-flex align-items-center py-5 my-5">
         <div class="container-fluid text-light">
             <div class="row">
                 <div class="col-lg-7 d-flex justify-content-center justify-content-lg-end align-items-center px-lg-5" data-aos="fade-right">
@@ -78,7 +78,7 @@
         </div>
         <!-- end of container -->
     </section>
-    <!-- end of contact -->
+    <!-- end of appointment -->
 
 
 </asp:Content>
