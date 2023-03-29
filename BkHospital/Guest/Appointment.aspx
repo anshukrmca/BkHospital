@@ -57,7 +57,7 @@
                                 </div>
                             </div>
                             <div class="form-group py-2">
-                                <textarea class="form-control form-control-input" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
+                                <textarea class="form-control form-control-input" id="exampleFormControlTextarea1" rows="6" placeholder="Disease [बीमारी]"></textarea>
                             </div>
                         </div>
                         <div class="my-3">

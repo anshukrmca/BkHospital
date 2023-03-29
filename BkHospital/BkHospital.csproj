@@ -71,7 +71,6 @@
     <Content Include="assets\images\article-details-large.jpg" />
     <Content Include="assets\images\article-details-small.jpg" />
     <Content Include="assets\images\contact.jpg" />
-    <Content Include="assets\images\favicon.png" />
     <Content Include="assets\images\generaluser.png" />
     <Content Include="assets\images\hero.jpg" />
     <Content Include="assets\images\home.jpg" />

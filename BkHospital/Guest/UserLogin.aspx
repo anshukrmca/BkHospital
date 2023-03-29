@@ -6,7 +6,7 @@
 
 
     <form id="loginforrm1">
-        <div class="login_div"> 
+        <div class="login_div" data-aos="fade-up"> 
             <div class=" mt-5 mx-5 py-3 px-2">
                 <h2 class="text-center my-2 text-warning"><u><b>Sign In..!</b></u></h2>
                 <div class="container">
