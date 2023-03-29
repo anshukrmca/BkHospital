@@ -72,6 +72,7 @@
     <Content Include="assets\images\article-details-small.jpg" />
     <Content Include="assets\images\contact.jpg" />
     <Content Include="assets\images\favicon.png" />
+    <Content Include="assets\images\generaluser.png" />
     <Content Include="assets\images\hero.jpg" />
     <Content Include="assets\images\home.jpg" />
     <Content Include="assets\images\house-medical-solid.svg" />
@@ -86,8 +87,10 @@
     <Content Include="css\fontawesome-all.min.css" />
     <Content Include="css\style.css" />
     <Content Include="css\swiper.css" />
-    <Content Include="Guest\Appoinment.aspx" />
+    <Content Include="Guest\Appointment.aspx" />
     <Content Include="Guest\Home.aspx" />
+    <Content Include="Guest\UserLogin.aspx" />
+    <Content Include="Guest\UserRegistration.aspx" />
     <Content Include="js\aos.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\purecounter.min.js" />
@@ -100,12 +103,12 @@
     <Content Include="webfonts\fa-solid-900.svg" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Guest\Appoinment.aspx.cs">
-      <DependentUpon>Appoinment.aspx</DependentUpon>
+    <Compile Include="Guest\Appointment.aspx.cs">
+      <DependentUpon>Appointment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Guest\Appoinment.aspx.designer.cs">
-      <DependentUpon>Appoinment.aspx</DependentUpon>
+    <Compile Include="Guest\Appointment.aspx.designer.cs">
+      <DependentUpon>Appointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Guest\GuestMaster.Master.cs">
       <DependentUpon>GuestMaster.Master</DependentUpon>
@@ -120,6 +123,20 @@
     </Compile>
     <Compile Include="Guest\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -145,6 +162,7 @@
     <Content Include="webfonts\fa-solid-900.woff" />
     <Content Include="webfonts\fa-solid-900.woff2" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -23,7 +23,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="background-color:#1c262f">
 
       <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
@@ -68,13 +68,13 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="Appoinment.aspx">Appintment</a>
+                        <a class="nav-link" href="Appointment.aspx">Appintment</a>
                     </li>
                     
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="#your-link" class="tooltiplink" data-title="login here">
+                        <a href="UserLogin.aspx" class="tooltiplink" data-title="login here">
                             <i class="fa fa-2x fa-stethoscope text-warning"></i>
                         </a>
                     </span>
@@ -90,6 +90,8 @@
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
             </asp:ContentPlaceHolder>
         </div>
     </form>
