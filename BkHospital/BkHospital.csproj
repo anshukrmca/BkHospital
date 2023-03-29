@@ -90,6 +90,7 @@
     <Content Include="Guest\Appointment.aspx" />
     <Content Include="Guest\Home.aspx" />
     <Content Include="Guest\UserLogin.aspx" />
+    <Content Include="Guest\UserProfile.aspx" />
     <Content Include="Guest\UserRegistration.aspx" />
     <Content Include="js\aos.js" />
     <Content Include="js\bootstrap.min.js" />
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="Guest\UserLogin.aspx.designer.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Guest\UserRegistration.aspx.cs">
       <DependentUpon>UserRegistration.aspx</DependentUpon>
