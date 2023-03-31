@@ -45,7 +45,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="date" class="form-control form-control-input" id="examControlInput2" placeholder="DOB" />
+                                <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="City" />
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="City" />
+                                <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="Country" />
                             </div>
                         </div>
                     </div>
