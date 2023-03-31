@@ -74,6 +74,12 @@
                         <a class="nav-link" href="UserProfile.aspx">Profile</a>
                     </li>
                     <li class="nav-item">
+                         <a href="Home.aspx" class="nav-link  tooltiplink" data-title="login here">
+                         <i class="fa fa-2x fa-stethoscope text-danger  "></i>
+                            Logout
+                        </a>
+                    </li>
+                    <li class="nav-item">
                          <a href="UserLogin.aspx" class="nav-link  tooltiplink" data-title="login here">
                          <i class="fa fa-2x fa-stethoscope text-warning"></i>
                             Login
