@@ -28,7 +28,7 @@
                     </div>
                     <div class="col">
                         <div class="form-group py-2">
-                            <input type="text" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Enter email" />
+                            <input type="email" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Enter email" />
                         </div>
                     </div>
                     <div class="col">
@@ -40,24 +40,24 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="email" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="Phone No" />
+                                <input type="number" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="Phone No" />
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="date" class="form-control form-control-input" id="examControlInput2" placeholder="DOB" />
+                                <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="City" />
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="email" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="State" />
+                                <input type="text" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="State" />
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="City" />
+                                <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="Country" />
                             </div>
                         </div>
                     </div>
