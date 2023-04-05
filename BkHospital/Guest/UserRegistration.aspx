@@ -16,48 +16,48 @@
 
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="text" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="First name" />
+                                <asp:TextBox ID="txtfstname" runat="server" placeholder="First name" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="text" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Last name" />
+                                <asp:TextBox ID="txtlastname" runat="server" placeholder="Last name" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
 
                     </div>
                     <div class="col">
                         <div class="form-group py-2">
-                            <input type="email" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Enter email" />
+                                <asp:TextBox ID="txtemail" runat="server" placeholder="Enter email" class="form-control form-control-input"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group py-2">
-                            <input type="text" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Address" />
+                                <asp:TextBox ID="txtaddress" runat="server" placeholder="Address" class="form-control form-control-input"></asp:TextBox>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="number" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="Phone No" />
+                                <asp:TextBox ID="txtphone" runat="server" placeholder="Phone No" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="City" />
+                                <asp:TextBox ID="txtcity" runat="server" placeholder="City" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="text" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="State" />
+                                <asp:TextBox ID="txtstate" runat="server" placeholder="State" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="Country" />
+                                <asp:TextBox ID="txtcountry" runat="server" placeholder="Country" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                     </div>
@@ -74,18 +74,18 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group py-2">
-                                    <input type="email" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="UserName" />
+                                <asp:TextBox ID="txtusername" runat="server" placeholder="UserName" class="form-control form-control-input"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group py-2">
-                                    <input type="text" class="form-control form-control-input" id="examControlInput2" placeholder="Password" />
+                                <asp:TextBox ID="txtpassword" runat="server" placeholder="Password" class="form-control form-control-input"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <asp:Button ID="btnSave" runat="server" Text="Submit" class="btn btn-success mx-3 my-2" />
+                    <asp:Button ID="btnSave" runat="server" Text="Submit" class="btn btn-success mx-3 my-2" OnClick="btnSave_Click" />
                     <a href="Home.aspx" class="btn">Back</a>
                 </div>
                 <p class="nav-link text-light">You have account..! <a href="Userlogin.aspx" class="text-success">Sign In</a></p>

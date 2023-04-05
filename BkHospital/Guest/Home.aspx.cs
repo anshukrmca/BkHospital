@@ -13,5 +13,30 @@ namespace BkHospital.Guest
         {
 
         }
+
+        protected void takeappointment_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (Session["role"] == "")
+                {
+                    Response.Redirect("UserLogin.aspx");
+
+                }
+                else if (Session["role"] == "user")
+                {
+                    Response.Redirect("Appointment.aspx");
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
     }
 }

@@ -12,18 +12,18 @@
                 <div class="container">
                     <div class="mb-3">
                         <label for="txtuserName" class="form-label">User Name</label>
-                        <asp:TextBox ID="txtuserName" runat="server" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtloginuserName" runat="server" class="form-control"></asp:TextBox>
                     </div>
                     <div class="mb-3">
                         <label for="txtPassword" class="form-label">Password</label>
-                        <asp:TextBox ID="txtPassword" runat="server" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtloginPassword" runat="server" class="form-control"></asp:TextBox>
 
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                         <label class="form-check-label" for="exampleCheck1">Remember me..!</label>
                     </div>
-                    <asp:Button ID="btnSave" runat="server" Text="Login" class="btn btn-success mx-3 my-2" />
+                    <asp:Button ID="btnSave" runat="server" Text="Login" class="btn btn-success mx-3 my-2" OnClick="btnSave_Click" />
                     <a href="Home.aspx" class="btn">Back</a>
                 </div>
                <p class="nav-link text-light">You haven't account..! <a href="UserRegistration.aspx" class="text-success">Sign Up</a></p>

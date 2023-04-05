@@ -15,6 +15,8 @@
     <link href="../css/swiper.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  <%--sweetalert --%>
+
       <!-- Favicon -->
     <link href="../assets/images/house-medical-solid.svg" rel="icon">
 
@@ -25,7 +27,13 @@
 </head>
 <body style="background-color:#1c262f">
 
-      <!-- Navigation -->
+    
+
+
+
+   
+    <form id="form1" runat="server">
+          <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
         <div class="container">
 
@@ -52,38 +60,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
-                   
-                   <%-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Drop</a>
-                        
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">Article Details</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="#">Terms Conditions</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                        </ul>
-                    </li>--%>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="Appointment.aspx">Appintment</a>
+                        <asp:LinkButton ID="appoinmentlink" runat="server" class="nav-link" OnClick="appoinmentlink_click" Visible="false">Appintment</asp:LinkButton>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="UserProfile.aspx">Profile</a>
+
+                        <asp:LinkButton ID="profile_link" runat="server" class="nav-link" OnClick="LinkButton1_Click" Visible="false">Profile</asp:LinkButton>
                     </li>
                     <li class="nav-item">
-                         <a href="Home.aspx" class="nav-link  tooltiplink" data-title="login here">
+                         <asp:LinkButton ID="logoutLink" runat="server" class="nav-link" OnClick="LinkButton2_Click" Visible="false">
                          <i class="fa fa-2x fa-stethoscope text-danger  "></i>
-                            Logout
-                        </a>
+                         Logout</asp:LinkButton>
                     </li>
                     <li class="nav-item">
-                         <a href="UserLogin.aspx" class="nav-link  tooltiplink" data-title="login here">
+                         <asp:LinkButton ID="loginlink" runat="server" class="nav-link" OnClick="LinkButton3_Click">
                          <i class="fa fa-2x fa-stethoscope text-warning"></i>
-                            Login
-                        </a>
+                            Login</asp:LinkButton>
+                       
                     </li>
                 </ul>
                
@@ -91,11 +87,6 @@
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
-
-
-
-   
-    <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
@@ -230,6 +221,7 @@
     <script src="../js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
     <script src="../js/aos.js"></script><!-- AOS on Animation Scroll -->
     <script src="../js/script.js"></script>  <!-- Custom scripts -->
+  
  
 </body>
 </html>

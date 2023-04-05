@@ -15,22 +15,22 @@ namespace BkHospital.Guest
     {
 
         /// <summary>
-        /// txtuserName control.
+        /// txtloginuserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtuserName;
+        protected global::System.Web.UI.WebControls.TextBox txtloginuserName;
 
         /// <summary>
-        /// txtPassword control.
+        /// txtloginPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtloginPassword;
 
         /// <summary>
         /// btnSave control.

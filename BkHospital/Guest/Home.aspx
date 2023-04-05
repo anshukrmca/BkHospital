@@ -18,7 +18,7 @@
                 <p>Services 24 X 7</p>  
             </div>
             <div class="my-3">
-                <a class="btn" href="#services">Know more....!</a>
+                <asp:LinkButton ID="takeappointment" runat="server" Text="Make a Appointment...!"  class="btn" OnClick="takeappointment_Click"></asp:LinkButton>
             </div>
         </div> <!-- end of container -->
     </section> <!-- end of home -->
