@@ -33,15 +33,18 @@ namespace BkHospital.Guest
             {
                 while (dr.Read())
                 {
-                    Response.Write("<script>alert('"+dr.GetValue(0).ToString()+"');</script>");
+                    //Response.Write("<script>alert('"+dr.GetValue(0).ToString()+"');</script>");
 
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "swal(\"Success!\", \"Successfully login !\", \"success\")", true);
-                        
                     Session["username"] = dr.GetValue(8).ToString();
                     Session["First_name"] = dr.GetValue(0).ToString();
                     Session["role"] = "user";
+
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "swal(\"Success!\", \"Successfully login !\", \"success\")",true);
+                    Response.Redirect("Home.aspx");
+
+
                 }
-                Response.Redirect("Home.aspx");
+                
             }
             else
             {

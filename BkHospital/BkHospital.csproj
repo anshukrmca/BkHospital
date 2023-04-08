@@ -75,12 +75,14 @@
     <Content Include="assets\images\hero.jpg" />
     <Content Include="assets\images\home.jpg" />
     <Content Include="assets\images\house-medical-solid.svg" />
+    <Content Include="assets\images\hoslogo.png" />
     <Content Include="assets\images\work.jpg" />
     <Content Include="assets\images\testimonial-1.jpg" />
     <Content Include="assets\images\testimonial-2.jpg" />
     <Content Include="assets\images\testimonial-3.jpg" />
     <Content Include="assets\images\testimonial-4.jpg" />
     <Content Include="assets\images\up-arrow.png" />
+    <Content Include="css\AdminDashboard.css" />
     <Content Include="css\aos.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\fontawesome-all.min.css" />
@@ -91,6 +93,12 @@
     <Content Include="Guest\UserLogin.aspx" />
     <Content Include="Guest\UserProfile.aspx" />
     <Content Include="Guest\UserRegistration.aspx" />
+    <Content Include="Hospital\AdminDashBoard.aspx" />
+    <Content Include="Hospital\AppoinmetList.aspx" />
+    <Content Include="Hospital\DoctorList.aspx" />
+    <Content Include="Hospital\EmployeeInfo.aspx" />
+    <Content Include="Hospital\Laboratory.aspx" />
+    <Content Include="Hospital\PatientInfo.aspx" />
     <Content Include="js\aos.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\purecounter.min.js" />
@@ -145,10 +153,60 @@
     <Compile Include="Guest\UserRegistration.aspx.designer.cs">
       <DependentUpon>UserRegistration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Hospital\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\AdminDashBoard.aspx.cs">
+      <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\AdminDashBoard.aspx.designer.cs">
+      <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\AppoinmetList.aspx.cs">
+      <DependentUpon>AppoinmetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\AppoinmetList.aspx.designer.cs">
+      <DependentUpon>AppoinmetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\DoctorList.aspx.cs">
+      <DependentUpon>DoctorList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\DoctorList.aspx.designer.cs">
+      <DependentUpon>DoctorList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\EmployeeInfo.aspx.cs">
+      <DependentUpon>EmployeeInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\EmployeeInfo.aspx.designer.cs">
+      <DependentUpon>EmployeeInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\Laboratory.aspx.cs">
+      <DependentUpon>Laboratory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\Laboratory.aspx.designer.cs">
+      <DependentUpon>Laboratory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\PatientInfo.aspx.cs">
+      <DependentUpon>PatientInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\PatientInfo.aspx.designer.cs">
+      <DependentUpon>PatientInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Guest\GuestMaster.Master" />
+    <Content Include="Hospital\Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

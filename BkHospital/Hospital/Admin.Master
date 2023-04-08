@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BkHospital.Hospital.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Welcome Admin</title>
+    <link href="../css/AdminDashboard.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <%--<script src="https://kit.fontawesome.com/c00eb2c437.js" crossorigin="anonymous"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="sidebar">  
+            <div class="sidebar-brand">
+                <h2><span class="lab la-accusoft"></span>B. K. Hospital</h2>
+            </div>
+
+            <div class="sidebar-menu">
+                <ul>
+
+                    <li>
+                        <asp:LinkButton class="LinkButton active" ID="dashboardLink" runat="server" OnClick="dashboardLink_Click"><span class="las la-igloo"></span>DashBoard</asp:LinkButton>
+
+                    </li>
+                    <li>
+                        <asp:LinkButton class="LinkButton" ID="patientLink" runat="server" OnClick="patientLink_Click"><span class="las la-users"></span>Patients..!</asp:LinkButton>
+
+                    </li>
+                    <li>
+                        <asp:LinkButton class="LinkButton" ID="LabLink" runat="server" OnClick="LabLink_Click"><span class="las la-clipboard-list"></span>Lab...!</asp:LinkButton>
+
+                    </li>
+
+                    <li>
+                        <asp:LinkButton class="LinkButton" ID="AppointmentLink" runat="server" OnClick="LinkButton4_Click"><span class="las la-receipt"></span>Appoinment List..!</asp:LinkButton>
+
+                    </li>
+
+                    <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click"><span class="las la-user-circle"></span>Doctor List..!</asp:LinkButton>
+
+                    </li>
+                    <li>
+                        <asp:LinkButton class="LinkButton" ID="employeeLink" runat="server"><span class="las la-user-circle"></span>Employee Info</asp:LinkButton>
+
+                    </li>
+                    <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton7" runat="server"><span class="las la-clipboard-list"></span>Accounts</asp:LinkButton>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label >
+                        <span class="las la-bars"></span>
+
+                    </label>
+                    DashBoard</h2>
+
+                <div class="search-wrapper">
+                    <span class="las la-search"></span>
+                    <asp:TextBox class="input" ID="TextBox1" runat="server" Placeholder="Search..!"></asp:TextBox>
+                </div>
+
+                <div class="user-wrapper">
+                    <img src="../assets/images/hoslogo.png" width="40px" height="40px" alt="logo" />
+                    <div>
+                        <h4>Rohit kr</h4>
+                        <small>Super Admin</small>
+                    </div>
+                </div>
+
+            </header>
+
+            <main>
+
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            </main>
+
+        </div>
+
+        <div>
+           
+        </div>
+    </form>
+</body>
+</html>
