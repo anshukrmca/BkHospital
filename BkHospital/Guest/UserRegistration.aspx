@@ -16,48 +16,48 @@
 
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <asp:TextBox ID="txtfstname" runat="server" placeholder="First name" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtfstname" runat="server" required placeholder="First name" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <asp:TextBox ID="txtlastname" runat="server" placeholder="Last name" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtlastname" runat="server" required placeholder="Last name" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
 
                     </div>
                     <div class="col">
                         <div class="form-group py-2">
-                                <asp:TextBox ID="txtemail" runat="server" placeholder="Enter email" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtemail" runat="server" required placeholder="Enter email" class="form-control form-control-input"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group py-2">
-                                <asp:TextBox ID="txtaddress" runat="server" placeholder="Address" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtaddress" runat="server" required placeholder="Address" class="form-control form-control-input"></asp:TextBox>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <asp:TextBox ID="txtphone" runat="server" placeholder="Phone No" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtphone" runat="server" required placeholder="Phone No" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <asp:TextBox ID="txtcity" runat="server" placeholder="City" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtcity" runat="server" required placeholder="City" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <asp:TextBox ID="txtstate" runat="server" placeholder="State" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtstate" runat="server" required placeholder="State" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <asp:TextBox ID="txtcountry" runat="server" placeholder="Country" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtcountry" runat="server" required placeholder="Country" class="form-control form-control-input"></asp:TextBox>
                             </div>
                         </div>
                     </div>
@@ -74,12 +74,12 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group py-2">
-                                <asp:TextBox ID="txtusername" runat="server" placeholder="UserName" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtusername" runat="server" required placeholder="UserName" class="form-control form-control-input"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group py-2">
-                                <asp:TextBox ID="txtpassword" runat="server" placeholder="Password" class="form-control form-control-input"></asp:TextBox>
+                                <asp:TextBox ID="txtpassword" runat="server" required placeholder="Password" class="form-control form-control-input"></asp:TextBox>
                                 </div>
                             </div>
                         </div>

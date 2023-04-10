@@ -12,11 +12,11 @@
                 <div class="container">
                     <div class="mb-3">
                         <label for="txtuserName" class="form-label">User Name</label>
-                        <asp:TextBox ID="txtloginuserName" runat="server" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtloginuserName" runat="server" required class="form-control"></asp:TextBox>
                     </div>
                     <div class="mb-3">
                         <label for="txtPassword" class="form-label">Password</label>
-                        <asp:TextBox ID="txtloginPassword" runat="server" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtloginPassword" runat="server" required class="form-control"></asp:TextBox>
 
                     </div>
                     <div class="mb-3 form-check">

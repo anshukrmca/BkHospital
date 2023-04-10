@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BkHospital.Hospital.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Welcome Admin</title>
+
+    <link href="../css/AdminDashboard.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <%--<script src="https://kit.fontawesome.com/c00eb2c437.js" crossorigin="anonymous"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="sidebar">  
+           
+            <div class="sidebar-brand">
+                <h2><span class="lab la-accusoft"></span>B. K. Hospital</h2>
+            </div>
+
+            <div class="sidebar-menu">
+                <ul>
+
+                    <li>
+                        <a href=<%=Page.ResolveUrl("~/Hospital/AdminDashBoard.aspx") %> class="LinkButton" ><span class="las la-igloo"></span>DashBoard</a>
+
+                       <%-- <asp:LinkButton class="LinkButton" ID="dashboardlink" runat="server" OnClick="dashboardlink_Click" ><span class="las la-igloo"></span>DashBoard</asp:LinkButton>--%>
+
+                    </li>
+                    <li>
+                        <a href=<%=Page.ResolveUrl("~/Hospital/PatientInfo.aspx") %> class="LinkButton" ><span class="las la-users"></span>Patients Info</a>
+
+                     <%--   <asp:LinkButton class="LinkButton" ID="patientLink" runat="server" ><span class="las la-users"></span>Patients Info</asp:LinkButton>--%>
+
+                        <%--sub menu start--%>
+
+                        <ul class="dropdown">
+                           <li>
+
+                        <asp:LinkButton class="LinkButton"  ID="opdLinks" runat="server" OnClick="opdLink" >OPD Registration..!</asp:LinkButton>
+
+                    </li>
+                             <li>
+                        <asp:LinkButton class="LinkButton" ID="ipdLinks" runat="server" OnClick="ipdLink">IPD Registration..!</asp:LinkButton>
+
+                    </li>
+                             <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton3" runat="server" >Birth Certificate ...!</asp:LinkButton>
+
+                    </li> <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton4" runat="server">Death Certificate ...!</asp:LinkButton>
+
+                    </li>
+                        </ul>
+                        <%--sub menu end--%>
+
+
+                    </li>
+                    <li>
+                        <a href=<%=Page.ResolveUrl("~/Hospital/Laboratory.aspx") %> class="LinkButton" ><span class="las la-clipboard-list"></span>Lab Work</a>
+
+                    <%--    <asp:LinkButton class="LinkButton" ID="LabLink" runat="server" OnClick="LabLink_Click"><span class="las la-clipboard-list"></span>Lab Work</asp:LinkButton>--%>
+
+                         <%--sub menu start--%>
+
+                        <ul class="dropdown">
+                           <li>
+                        <asp:LinkButton class="LinkButton"  ID="LinkButton11" runat="server" >Pathology Registration.</asp:LinkButton>
+
+                    </li>
+                             <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton12" runat="server" >Filling Test Report.</asp:LinkButton>
+
+                    </li>
+                             <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton13" runat="server" >Print Test Report.</asp:LinkButton>
+
+                    </li> <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton14" runat="server">Cash Collection ...!</asp:LinkButton>
+
+                    </li>
+                        </ul>
+                        <%--sub menu end--%>
+
+                    </li>
+
+                    <li>
+                         <a href=<%=Page.ResolveUrl("~/Hospital/AppoinmetList.aspx") %> class="LinkButton" ><span class="las la-receipt"></span>Appoinment List..!</a>
+
+                      <%--  <asp:LinkButton class="LinkButton" ID="AppointmentLink" runat="server" OnClick="LinkButton4_Click"><span class="las la-receipt"></span>Appoinment List..!</asp:LinkButton>--%>
+
+                    </li>
+
+                    <li>
+                        <a href=<%=Page.ResolveUrl("~/Hospital/DoctorList.aspx") %> class="LinkButton" ><span class="las la-user-circle"></span>Doctor List..!</a>
+
+
+                      <%--  <asp:LinkButton class="LinkButton" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click"><span class="las la-user-circle"></span>Doctor List..!</asp:LinkButton>--%>
+
+                    </li>
+                    <li>
+                         <a href=<%=Page.ResolveUrl("~/Hospital/EmployeeInfo.aspx") %> class="LinkButton" ><span class="las la-user-circle"></span>Employee Info</a>
+
+                        <%--<asp:LinkButton class="LinkButton" ID="employeeLink" runat="server"><span class="las la-user-circle"></span>Employee Info</asp:LinkButton>--%>
+
+                        <%--sub menu start--%>
+
+                         <ul class="dropdown">
+                           <li>
+                        <asp:LinkButton class="LinkButton"  ID="LinkButton6" runat="server" OnClick="LabLink_Click"><span class="las la-clipboard-list"></span>Lab...!</asp:LinkButton>
+
+                    </li>
+                             <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton8" runat="server" OnClick="LabLink_Click"><span class="las la-clipboard-list"></span>Lab...!</asp:LinkButton>
+
+                    </li>
+                             <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton9" runat="server" OnClick="LabLink_Click"><span class="las la-clipboard-list"></span>Lab...!</asp:LinkButton>
+
+                    </li> <li>
+                        <asp:LinkButton class="LinkButton" ID="LinkButton10" runat="server" OnClick="LabLink_Click"><span class="las la-clipboard-list"></span>Lab...!</asp:LinkButton>
+
+                    </li>
+                        </ul>
+                        <%--sub menu end--%>
+
+
+
+                    </li>
+                    <li>
+                         <a href=<%=Page.ResolveUrl("~/Hospital/AppoinmetList.aspx") %> class="LinkButton" ><span class="las la-clipboard-list"></span>Accounts</a>
+
+                       <%-- <asp:LinkButton class="LinkButton" ID="LinkButton7" runat="server"><span class="las la-clipboard-list"></span>Accounts</asp:LinkButton>--%>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label >
+                        <span class="las la-bars"></span>
+
+                    </label>
+                    DashBoard</h2>
+
+                <div class="search-wrapper">
+                    <span class="las la-search"></span>
+                    <asp:TextBox class="input" ID="TextBox1" runat="server" Placeholder="Search..!"></asp:TextBox>
+                </div>
+
+                <div class="user-wrapper">
+                    <img src="../assets/images/hoslogo.png" width="40px" height="40px" alt="logo" />
+                    <div>
+                        <h4>Rohit kr</h4>
+                        <small>Super Admin</small>
+                    </div>
+                </div>
+
+            </header>
+
+            <main>
+
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            </main>
+
+        </div>
+
+        <div>
+           
+        </div>
+    </form>
+</body>
+</html>

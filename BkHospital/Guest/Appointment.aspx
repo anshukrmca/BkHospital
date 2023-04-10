@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Guest/GuestMaster.Master" AutoEventWireup="true" CodeBehind="Appointment.aspx.cs" Inherits="BkHospital.Guest.Appointment" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-   <!-- appointment -->
+    <!-- appointment -->
     <section class="contact d-flex align-items-center py-5 my-5">
         <div class="container-fluid text-light">
             <div class="row">
@@ -16,52 +17,60 @@
                             <p class="para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta mollitia totam explicabo obcaecati quia laudantium repudiandae.</p>
                         </div>
                         <div>
+                            <asp:Label ID="txtusername" runat="server" Text="user" Visible="false"></asp:Label>
+                            <asp:TextBox ID="tstusername" runat="server" Visible="false"></asp:TextBox>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                        <input type="text" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Enter name" />
+                                        <asp:TextBox runat="server" ID="txtname" class="form-control form-control-input" placeholder="Enter name" required></asp:TextBox>
+
+                                       
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                        <input type="email" class="form-control form-control-input" id="exampleFormControlInput2" placeholder="Enter phone number" />
+                                         <asp:TextBox ID="txtphone" runat="server" class="form-control form-control-input" placeholder="Enter phone number" required TextMode="Phone"></asp:TextBox>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-8">
+                                <div class="col-lg-6">
                                     <div class="form-group py-1">
-                                        <input type="email" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="Enter email" />
+                                        <asp:TextBox ID="txtemail" runat="server" class="form-control form-control-input" required placeholder="Enter email" TextMode="Email" ></asp:TextBox>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group py-2">
-                                        <input type="date" class="form-control form-control-input" id="examControlInput2" placeholder="Appintment date" />
+                                <div class="col-lg-6 py-1">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">Appintment date</span>
+                                        <asp:TextBox runat="server" ID="txtdate" class="form-control" required TextMode="Date"></asp:TextBox>
                                     </div>
+                                   
                                 </div>
                             </div>
                             <div class="form-group py-2">
-                                <input type="text" class="form-control form-control-input" id="examplormcity" placeholder="Address" />
+                                        <asp:TextBox runat="server" ID="txtaddress" required class="form-control form-control-input" placeholder="Address"></asp:TextBox>
+
                             </div>
 
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                        <input type="text" class="form-control form-control-input" id="exampleFormcity" placeholder="City" />
+                                          <asp:TextBox runat="server" ID="txtcity" required class="form-control form-control-input" placeholder="City"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                        <input type="email" class="form-control form-control-input" id="exampleFormControlState" placeholder="State" />
+                                          <asp:TextBox runat="server" ID="txtstate" required class="form-control form-control-input" placeholder="State"></asp:TextBox>
+                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group py-2">
-                                <textarea class="form-control form-control-input" id="exampleFormControlTextarea1" rows="6" placeholder="Disease [बीमारी]"></textarea>
+                                <textarea class="form-control form-control-input" required runat="server" cols="20" rows="2" ID="txtdisease"  placeholder="Disease [बीमारी]"></textarea>
                             </div>
                         </div>
                         <div class="my-3">
-                            <a class="btn form-control-submit-button mx-5" href="#your-link">Conform Appointment</a>
+                            <asp:Button ID="btnappointment" runat="server" Text="Conform Appointment" class="btn form-control-submit-button mx-5" OnClick="btnappointment_Click"/>
                             <a class="btn form-control-submit-button" href="Home.aspx">Back..!</a>
 
                         </div>

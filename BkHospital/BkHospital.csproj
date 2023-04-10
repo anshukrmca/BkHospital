@@ -98,11 +98,14 @@
     <Content Include="Hospital\DoctorList.aspx" />
     <Content Include="Hospital\EmployeeInfo.aspx" />
     <Content Include="Hospital\Laboratory.aspx" />
+    <Content Include="Hospital\PatientInfo.aspx" />
     <Content Include="js\aos.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\purecounter.min.js" />
     <Content Include="js\script.js" />
     <Content Include="js\swiper.min.js" />
+    <Content Include="Patients\IPD_petients.aspx" />
+    <Content Include="Patients\OPD_petients.aspx" />
     <Content Include="readme\readme.txt" />
     <Content Include="Web.config" />
     <Content Include="webfonts\fa-brands-400.svg" />
@@ -152,6 +155,13 @@
     <Compile Include="Guest\UserRegistration.aspx.designer.cs">
       <DependentUpon>UserRegistration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Hospital\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Hospital\AdminDashBoard.aspx.cs">
       <DependentUpon>AdminDashBoard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -187,10 +197,32 @@
     <Compile Include="Hospital\Laboratory.aspx.designer.cs">
       <DependentUpon>Laboratory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Hospital\PatientInfo.aspx.cs">
+      <DependentUpon>PatientInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\PatientInfo.aspx.designer.cs">
+      <DependentUpon>PatientInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\IPD_petients.aspx.cs">
+      <DependentUpon>IPD_petients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patients\IPD_petients.aspx.designer.cs">
+      <DependentUpon>IPD_petients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\OPD_petients.aspx.cs">
+      <DependentUpon>OPD_petients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patients\OPD_petients.aspx.designer.cs">
+      <DependentUpon>OPD_petients.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Guest\GuestMaster.Master" />
+    <Content Include="Hospital\Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
