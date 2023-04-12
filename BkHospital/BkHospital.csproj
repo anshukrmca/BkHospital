@@ -82,12 +82,14 @@
     <Content Include="assets\images\testimonial-3.jpg" />
     <Content Include="assets\images\testimonial-4.jpg" />
     <Content Include="assets\images\up-arrow.png" />
+    <Content Include="css\AdminCss.css" />
     <Content Include="css\AdminDashboard.css" />
     <Content Include="css\aos.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\fontawesome-all.min.css" />
     <Content Include="css\style.css" />
     <Content Include="css\swiper.css" />
+    <Content Include="DoctorIMG\hoslogo.png" />
     <Content Include="Guest\Appointment.aspx" />
     <Content Include="Guest\Home.aspx" />
     <Content Include="Guest\UserLogin.aspx" />

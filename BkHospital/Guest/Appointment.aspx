@@ -72,7 +72,6 @@
                         <div class="my-3">
                             <asp:Button ID="btnappointment" runat="server" Text="Conform Appointment" class="btn form-control-submit-button mx-5" OnClick="btnappointment_Click"/>
                             <a class="btn form-control-submit-button" href="Home.aspx">Back..!</a>
-
                         </div>
                     </div>
                     <!-- end of div -->
