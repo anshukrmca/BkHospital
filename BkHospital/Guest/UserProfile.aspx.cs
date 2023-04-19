@@ -23,8 +23,8 @@ namespace BkHospital.Guest
         }
         protected void brnupdate_Click(object sender, EventArgs e)
         {
-            //updateuser();
-            ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "swal(\"Success !\", \"User not updated !\", \"success\")", true);
+            updateuser();
+            //ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "swal(\"Success !\", \"User not updated !\", \"success\")", true);
 
         }
 
@@ -50,7 +50,7 @@ namespace BkHospital.Guest
                         con.Open();
                     }
 
-                    string query = "UPDATE UserRegistration First_name = @fstname,last_name=@lastname,email=@email,address=@address,phone=@phone,city=@city,state=@state,country=@country,username=@username,password=@password WHERE usernmae= '" + txtusername.Text.Trim() + "'";
+                    string query = "UPDATE UserRegistration SET First_name = @fstname,last_name=@lastname,email=@email,address=@address,phone=@phone,city=@city,state=@state,country=@country,username=@username,password=@password WHERE username= '" + txtusername.Text.Trim() + "'";
 
                     using(SqlCommand cmd = new SqlCommand(query, con))
                     {
@@ -122,10 +122,6 @@ namespace BkHospital.Guest
                 {
                     ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "swal(\"Error!\", \"User Not Found !\", \"error\")", true);
                 }
-
-
-
-
             }
             catch (Exception ex)
             {
