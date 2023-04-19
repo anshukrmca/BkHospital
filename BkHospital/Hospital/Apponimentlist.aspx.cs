@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace BkHospital.Hospital
 {
-    public partial class PatientInfo : System.Web.UI.Page
+    public partial class Apponimentlist : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

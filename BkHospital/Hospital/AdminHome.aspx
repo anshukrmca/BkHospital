@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Hospital/Admin.Master" AutoEventWireup="true" CodeBehind="DoctorList.aspx.cs" Inherits="BkHospital.Hospital.AdminDashBoard" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Hospital/AdminMaster.Master" AutoEventWireup="true" CodeBehind="AdminHome.aspx.cs" Inherits="BkHospital.Hospital.AdminHome" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  
+    
             <div class="mainCard">
                  <div class="cards">
                    <div class="card-container">
@@ -162,9 +162,6 @@
 
                     </div>
                 </div>
-
-
-
 
 
 

@@ -11,7 +11,7 @@ namespace BkHospital.Hospital
 {
 
 
-    public partial class Laboratory
+    public partial class AdminHome
     {
     }
 }

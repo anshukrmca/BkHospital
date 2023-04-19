@@ -96,6 +96,24 @@ namespace BkHospital.Guest
         protected global::System.Web.UI.WebControls.TextBox txtstate;
 
         /// <summary>
+        /// ddlDocList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlDocList;
+
+        /// <summary>
+        /// ddlCunsultTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCunsultTime;
+
+        /// <summary>
         /// txtdisease control.
         /// </summary>
         /// <remarks>

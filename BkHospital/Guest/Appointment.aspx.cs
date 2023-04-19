@@ -14,47 +14,72 @@ namespace BkHospital.Guest
     {
         string strcon = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
 
+       
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtusername.Text= Session["username"].ToString();
-            tstusername.Text = txtusername.Text;
+            //txtusername.Text= Session["username"].ToString();
+            //tstusername.Text = txtusername.Text;
+
+            if (!IsPostBack)
+            {
+                getdate();
+            }
         }
 
         protected void btnappointment_Click(object sender, EventArgs e)
         {
+
             try
             {
+
+                string prefix = "APP", Name = txtname.Text.Trim(), Phone = txtphone.Text.Trim(), Email = txtemail.Text.Trim(), Appointment_Date = txtdate.Text.Trim(), Address = txtaddress.Text.Trim(), City = txtcity.Text.Trim(), state = txtstate.Text.Trim(), DoctorName = ddlDocList.SelectedValue.Trim(), ConsultTime = ddlCunsultTime.Text.Trim(), Disease = txtdisease.InnerText.Trim(), username = Session["username"].ToString();
+
+
                 SqlConnection con = new SqlConnection(strcon);
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
                 }
-                string query = "INSERT INTO Appointmant (Name,Phone,Email,Appointment_Date,Address,City,state,Disease,username) values          (@name,@phone,@email,@date,@address,@city,@state,@desease,@username)";
-                SqlCommand cmd = new SqlCommand(query, con);
-
-                cmd.Parameters.AddWithValue("@name", txtname.Text.Trim());
-                cmd.Parameters.AddWithValue("@phone", txtphone.Text.Trim());
-                cmd.Parameters.AddWithValue("@email", txtemail.Text.Trim());
-                cmd.Parameters.AddWithValue("@date", txtdate.Text.Trim());
-                cmd.Parameters.AddWithValue("@address", txtaddress.Text.Trim());
-                cmd.Parameters.AddWithValue("@city", txtcity.Text.Trim());
-                cmd.Parameters.AddWithValue("@state", txtstate.Text.Trim());
-                cmd.Parameters.AddWithValue("@desease", txtdisease.InnerText.Trim());
-                cmd.Parameters.AddWithValue("@username",tstusername.Text.Trim());   
-
+                SqlCommand cmd = new SqlCommand("Appointment_add_SP '"+ prefix + "','"+ Name + "','"+ Phone + "','"+ Email + "','"+ Appointment_Date + "','"+ Address + "','"+ City + "','"+ state + "','"+ DoctorName + "','"+ ConsultTime + "','"+ Disease + "','"+ username + "'",con);
                 cmd.ExecuteNonQuery();
-                con.Close();
 
                 ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "swal(\"Success !\", \"User added !\", \"success\")", true);
-                Response.Redirect("Home.aspx");
-
-
+                txtname.Text = "";
+                txtphone.Text = "";
+                txtemail.Text = "";
+                txtdate.Text = "";
+                txtaddress.Text = "";
+                txtcity.Text = "";
+                txtstate.Text = "";
+                ddlDocList.Text="";
+                ddlCunsultTime.Text = "";
+                txtdisease.Value ="";
+                
             }
             catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
+
             }
 
+
+
         }
+        //userdefine function
+
+        void getdate()
+        {
+            SqlConnection con = new SqlConnection(strcon);
+            SqlCommand cmd = new SqlCommand("Appointment_DOCTORlist_SP", con);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            dataAdapter.Fill(dt);
+            ddlDocList.DataSource = dt;
+            ddlDocList.DataBind();
+            ddlDocList.Items.Insert(0, new ListItem("--Select Docotr --", "0"));
+
+
+        }
+
     }
 }

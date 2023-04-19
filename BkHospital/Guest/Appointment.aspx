@@ -24,19 +24,19 @@
                                     <div class="form-group py-2">
                                         <asp:TextBox runat="server" ID="txtname" class="form-control form-control-input" placeholder="Enter name" required></asp:TextBox>
 
-                                       
+
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                         <asp:TextBox ID="txtphone" runat="server" class="form-control form-control-input" placeholder="Enter phone number" required TextMode="Phone"></asp:TextBox>
+                                        <asp:TextBox ID="txtphone" runat="server" class="form-control form-control-input" placeholder="Enter phone number" required TextMode="Phone"></asp:TextBox>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group py-1">
-                                        <asp:TextBox ID="txtemail" runat="server" class="form-control form-control-input" required placeholder="Enter email" TextMode="Email" ></asp:TextBox>
+                                        <asp:TextBox ID="txtemail" runat="server" class="form-control form-control-input" required placeholder="Enter email" TextMode="Email"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 py-1">
@@ -44,45 +44,69 @@
                                         <span class="input-group-text" id="basic-addon1">Appintment date</span>
                                         <asp:TextBox runat="server" ID="txtdate" class="form-control" required TextMode="Date"></asp:TextBox>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                             <div class="form-group py-2">
-                                        <asp:TextBox runat="server" ID="txtaddress" required class="form-control form-control-input" placeholder="Address"></asp:TextBox>
+                                <asp:TextBox runat="server" ID="txtaddress" required class="form-control form-control-input" placeholder="Address"></asp:TextBox>
 
                             </div>
 
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                          <asp:TextBox runat="server" ID="txtcity" required class="form-control form-control-input" placeholder="City"></asp:TextBox>
+                                        <asp:TextBox runat="server" ID="txtcity" required class="form-control form-control-input" placeholder="City"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                          <asp:TextBox runat="server" ID="txtstate" required class="form-control form-control-input" placeholder="State"></asp:TextBox>
-                                        
+                                        <asp:TextBox runat="server" ID="txtstate" required class="form-control form-control-input" placeholder="State"></asp:TextBox>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                   
+                                    <div class="form-group py-2">
+                                        <asp:DropDownList ID="ddlDocList" runat="server" class="form-control form-control-input" required DataTextField="DoctorName" >
+                                            <asp:ListItem Value="" Text="--Select--"></asp:ListItem>
+
+                                        </asp:DropDownList>
+
+                                         </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <asp:DropDownList ID="ddlCunsultTime" class="form-control form-control-input" required runat="server">
+                                            <asp:ListItem Value="" Text="--Select--"></asp:ListItem>
+                                            <asp:ListItem Value="Morning" Text="Morning"></asp:ListItem>
+                                            <asp:ListItem Value="AfterNoon" Text="AfterNoon"></asp:ListItem>
+                                            <asp:ListItem Value="Evening" Text="Evening"></asp:ListItem>
+                                            <asp:ListItem Value="Whole Day" Text="Whole Day"></asp:ListItem>
+                                        </asp:DropDownList>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group py-2">
-                                <textarea class="form-control form-control-input" required runat="server" cols="20" rows="2" ID="txtdisease"  placeholder="Disease [बीमारी]"></textarea>
+                                <textarea class="form-control form-control-input" required runat="server" cols="20" rows="2" id="txtdisease" placeholder="Disease [बीमारी]"></textarea>
                             </div>
                         </div>
+
                         <div class="my-3">
-                            <asp:Button ID="btnappointment" runat="server" Text="Conform Appointment" class="btn form-control-submit-button mx-5" OnClick="btnappointment_Click"/>
+                            <asp:Button ID="btnappointment" runat="server" Text="Conform Appointment" class="btn form-control-submit-button mx-5" OnClick="btnappointment_Click" />
                             <a class="btn form-control-submit-button" href="Home.aspx">Back..!</a>
                         </div>
                     </div>
-                    <!-- end of div -->
-                </div>
-                <!-- end of col -->
-                <div class="col-lg-5 d-flex align-items-center" data-aos="fade-down">
-                    <img class="img-fluid d-none d-lg-block" src="../assets/images/contact.jpg" alt="contact" />
-                </div>
-                <!-- end of col -->
+                <!-- end of div -->
             </div>
-            <!-- end of row -->
+            <!-- end of col -->
+            <div class="col-lg-5 d-flex align-items-center" data-aos="fade-down">
+                <img class="img-fluid d-none d-lg-block" src="../assets/images/contact.jpg" alt="contact" />
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
         </div>
         <!-- end of container -->
     </section>

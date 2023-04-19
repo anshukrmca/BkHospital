@@ -1,14 +1,19 @@
-﻿using System;
+﻿using BkHospital.Hospital;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace BkHospital.Guest
 {
     public partial class GuestMaster : System.Web.UI.MasterPage
     {
+        string strcon = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
 

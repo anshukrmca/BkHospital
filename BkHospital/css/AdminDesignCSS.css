@@ -1,0 +1,364 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.sidebarr::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebarr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(45deg, #47cebe,#ef4a82);
+    z-index: 2;
+}
+
+
+
+    .sidebarr .logo-details {
+        height: 80px;
+        width: 280px;
+        display: flex;
+        align-items: center;
+        line-height: 60px;
+        font-weight: 600;
+        border-bottom: 2px solid #fff;
+        position: fixed;
+        z-index: 2;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-image: linear-gradient(45deg, #47cebe,#ef4a82);
+    }
+
+        .sidebarr .logo-details i {
+            font-size: 50px;
+            color: #444;
+            height: 50px;
+            min-width: 78px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+
+
+        .sidebarr .logo-details .logo_name {
+            font-size: 28px;
+            color: #444;
+            font-weight: 600;
+        }
+
+    .sidebarr .nav-links {
+        margin-top: 80px;
+        height: 100%;
+        padding: 10px 0px;
+    }
+
+        .sidebarr .nav-links li {
+            position: relative;
+            list-style: none;
+            transition: all 0.4s ease;
+        }
+
+
+
+            .sidebarr .nav-links li:hover {
+                background: #47cebe;
+                color: white;
+            }
+
+            .sidebarr .nav-links li .icon-link {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .sidebarr .nav-links li i {
+                height: 50px;
+                min-width: 78px;
+                text-align: center;
+                line-height: 50px;
+                color: #444;
+                font-size: 36px;
+            }
+
+
+            .sidebarr .nav-links li.showMenu i.arrow {
+                transform: rotate(-180deg);
+            }
+
+            .sidebarr .nav-links li a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+
+                .sidebarr .nav-links li a .link_name {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: black;
+                }
+
+
+            .sidebarr .nav-links li .sub-menu {
+                padding: 6px 6px 14px 50px;
+                margin-top: -10px;
+                background-image: linear-gradient(45deg, #47cebe,#ef4a82);
+                display: none;
+                align-items: center;
+            }
+
+            .sidebarr .nav-links li.showMenu .sub-menu {
+                display: block;
+            }
+
+
+
+            .sidebarr .nav-links li .sub-menu a {
+                color: black;
+                font-size: 15px;
+                padding: 5px 45px;
+                white-space: nowrap;
+            }
+
+.main {
+    position: absolute;
+    width: calc(100% - 280px);
+    min-height: 100px;
+    left: 280px;
+    background-color: whitesmoke;
+    transition: all 0.5s ease;
+    z-index: 5;
+   
+}
+
+.MainBox {
+    height: 100%;
+    padding:10px 20px;
+}
+
+
+.sidebarr.close ~ .main {
+    left: 78px;
+    width: calc(100% - 78px);
+    height: auto;
+}
+
+
+.top-bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(45deg, #47cebe,#ef4a82);
+    z-index: 1;
+}
+
+    .top-bar .sidebar_btn {
+        font-size: 50px;
+    }
+
+    .top-bar .search {
+        position: relative;
+        max-width: 400px;
+    }
+
+ .top-bar .input {
+        width: 258px;
+        height: 40px;
+        font-size: 16px;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 20px 20px;
+  }
+
+.search span {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.mainCard {
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.MainBox .cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(45deg, #47cebe,#ef4a82);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.number {
+    font-size: 35px;
+    font-weight: 500;
+    color: #444;
+}
+
+.card-name {
+    color: #444;
+    font-weight: 600;
+}
+
+.icon-box {
+    font-size: 45px;
+    color: #444;
+}
+
+.mytables {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+}
+
+
+.last-appointment,
+.doctor-visiting {
+    min-height: 350px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0,0,00.2);
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #444;
+}
+.mybtn {
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(45deg, #47cebe,#ef4a82);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+.la-eye {
+    background: #32bea6;
+}
+
+.la-edit {
+    background: #63b4f4;
+}
+
+.la-trash-alt {
+    background: #ed5564;
+}
+
+
+.gridbtn span {
+    font-size: 30px;
+    background-color: transparent;
+}
+
+
+
+table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead td {
+    font-weight: 600;
+    color: #333;
+}
+
+table tr {
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
+}
+
+tbody tr:hover {
+    background: #444;
+    color: black;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 9px 5px;
+}
+
+
+    td i {
+        padding: 7px;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+.edbtn {
+    color: #bbf52c;
+    cursor: pointer
+}
+
+.dbtn {
+    color: red;
+    cursor: pointer
+}
+
+
+@media(max-width:860px) {
+    .mainCard {
+        grid-template-columns: 1fr;
+    }
+
+    .mytables {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:530px ) {
+    .mainCard {
+        grid-template-columns: 1fr;
+    }
+
+    .last-appointment td:nth-child(1) {
+        display: none;
+    }
+}
+
+

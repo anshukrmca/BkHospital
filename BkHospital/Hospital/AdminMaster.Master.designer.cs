@@ -11,7 +11,7 @@ namespace BkHospital.Hospital
 {
 
 
-    public partial class Admin
+    public partial class AdminMaster
     {
 
         /// <summary>
