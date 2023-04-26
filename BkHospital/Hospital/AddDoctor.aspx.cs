@@ -12,7 +12,7 @@ namespace BkHospital.Hospital
 {
     public partial class AddDoctor : System.Web.UI.Page
     {
-        string strcon = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
+        string strcon = ConfigurationManager.ConnectionStrings["conn"].ConnectionString; 
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -197,8 +197,7 @@ namespace BkHospital.Hospital
                 }
                 else
                 {
-                    Response.Write("<script>alert('not found')</script>");
-                    //ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "swal(\"Error!\", \"Doctor Not Found !\", \"error\")", true);
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "swal(\"Error!\", \"Doctor Not Found !\", \"error\")", true);
                 }
             }
 

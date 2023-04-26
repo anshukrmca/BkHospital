@@ -42,7 +42,7 @@
             <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a href="Home.aspx" class="navbar-brand">
+            <a href='<%=Page.ResolveUrl("~/Hospital/AdminLogin.aspx") %>' class="navbar-brand">
                     <h4 class="m-0 text-uppercase text-warning"><i class="fa fa-clinic-medical me-2"></i>NEW B.K HoSpItAl</h4>
                 </a>
 
@@ -53,33 +53,33 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
+                        <a class="nav-link active" aria-current="page" href="Home.aspx"><h5>Home</h5></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about"><h5>About</h5></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#services"><h5>Services</h5></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact"><h5>Contact</h5></a>
                     </li>
                      <li class="nav-item">
-                        <asp:LinkButton ID="appoinmentlink" runat="server" class="nav-link" OnClick="appoinmentlink_click" Visible="false">Appintment</asp:LinkButton>
+                        <asp:LinkButton ID="appoinmentlink" runat="server" class="nav-link" OnClick="appoinmentlink_click" Visible="false"><h5>Appintment</h5></asp:LinkButton>
                     </li>
                     <li class="nav-item">
 
-                        <asp:LinkButton ID="profile_link" runat="server" class="nav-link" OnClick="LinkButton1_Click" Visible="false">Profile</asp:LinkButton>
+                        <asp:LinkButton ID="profile_link" runat="server" class="nav-link" OnClick="LinkButton1_Click" Visible="false"><h5>Profile</h5></asp:LinkButton>
                     </li>
                     <li class="nav-item">
                          <asp:LinkButton ID="logoutLink" runat="server" class="nav-link" OnClick="LinkButton2_Click" Visible="false">
-                         <i class="fa fa-2x fa-stethoscope text-danger  "></i>
-                         Logout</asp:LinkButton>
+                        <h5> <i class="fa fa-2x fa-stethoscope text-danger  "></i>
+                         Logout</h5></asp:LinkButton>
                     </li>
                     <li class="nav-item">
-                         <asp:LinkButton ID="loginlink" runat="server" class="nav-link" OnClick="LinkButton3_Click">
-                         <i class="fa fa-2x fa-stethoscope text-warning"></i>
-                            Login</asp:LinkButton>
+                         <asp:LinkButton ID="loginlink" runat="server" class="nav-link" OnClick="LinkButton3_Click"><h5>
+                         <i class="fa fa-2x fa-stethoscope text-warning"></i>Login</h5>
+                            </asp:LinkButton>
                        
                     </li>
                 </ul>

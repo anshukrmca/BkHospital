@@ -88,7 +88,6 @@
     <Content Include="css\fontawesome-all.min.css" />
     <Content Include="css\style.css" />
     <Content Include="css\swiper.css" />
-    <Content Include="DoctorIMG\hoslogo.png" />
     <Content Include="Guest\Appointment.aspx" />
     <Content Include="Guest\Home.aspx" />
     <Content Include="Guest\UserLogin.aspx" />
@@ -96,8 +95,10 @@
     <Content Include="Guest\UserRegistration.aspx" />
     <Content Include="Hospital\AddDoctor.aspx" />
     <Content Include="Hospital\AdminHome.aspx" />
+    <Content Include="Hospital\AdminLogin.aspx" />
     <Content Include="Hospital\Apponimentlist.aspx" />
     <Content Include="Hospital\DocotorList.aspx" />
+    <Content Include="Hospital\EmployeeInfo.aspx" />
     <Content Include="js\aos.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\purecounter.min.js" />
@@ -168,6 +169,13 @@
     <Compile Include="Hospital\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Hospital\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Hospital\AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,6 +196,13 @@
     </Compile>
     <Compile Include="Hospital\DocotorList.aspx.designer.cs">
       <DependentUpon>DocotorList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\EmployeeInfo.aspx.cs">
+      <DependentUpon>EmployeeInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\EmployeeInfo.aspx.designer.cs">
+      <DependentUpon>EmployeeInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Patients\IPD_petients.aspx.cs">
       <DependentUpon>IPD_petients.aspx</DependentUpon>

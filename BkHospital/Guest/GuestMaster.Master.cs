@@ -41,6 +41,8 @@ namespace BkHospital.Guest
                 {
                     profile_link.Visible = true;
                     profile_link.Text= "welcome " + Session["First_name"].ToString();
+                    profile_link.Font.Size = 17;
+                    
                     logoutLink.Visible = true;
                     appoinmentlink.Visible = true;
                     
@@ -76,7 +78,7 @@ namespace BkHospital.Guest
         }
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("UserLogin.aspx");
+            Response.Redirect("~/Guest/UserLogin.aspx");
         }
         protected void appoinmentlink_click(object sender, EventArgs e)
         {

@@ -31,26 +31,30 @@
 
             <ul class="nav-links">
                 <li>
-                    <a href='<%=Page.ResolveUrl("~/Hospital/AdminHome.aspx") %>'>
+                    <asp:LinkButton runat="server" ID="DashboardLink" OnClick="DashboardLink_Click">
                         <i class="las la-th-large"></i>
                         <span class="link_name">Dashboard</span>
-                    </a>
+                    </asp:LinkButton>
+                   
                 </li>
                 <li>
-                    <a href='<%=Page.ResolveUrl("~/Hospital/Apponimentlist.aspx") %>'>
-                        <i class="las la-stethoscope"></i>
+                    <asp:LinkButton ID="AppointmentLink" runat="server" OnClick="AppointmentLink_Click">
+                         <i class="las la-stethoscope"></i>
                         <span class="link_name">Appointment</span>
-                    </a>
+                    </asp:LinkButton>
+                    
                 </li>
                 <li>
-                         <a href=<%=Page.ResolveUrl("~/Hospital/DocotorList.aspx") %>>
-                            <i class="las la-users"></i>
+                    <asp:LinkButton ID="DocListLink" runat="server" OnClick="DocListLink_Click">
+                         <i class="las la-users"></i>
                             <span class="link_name">Doctor List</span>
-                        </a>
+
+                    </asp:LinkButton>
+                         
                     </li>
                 <li>
 
-                    <div class="icon-link">
+                    <div class="icon-link" ID="HosPan"  runat="server" visible="true">
                         <a href="#">
                             <i class="las la-user-md"></i>
                             <span class="link_name">Hospital MGNT</span>
@@ -71,7 +75,7 @@
                 </li>
                 <li>
 
-                    <div class="icon-link">
+                    <div class="icon-link" ID="LabPan" runat="server" visible="true">
                         <a href="#">
                             <i class="las la-stethoscope"></i>
                             <span class="link_name">Lab MGNT.</span>
@@ -89,7 +93,7 @@
 
                 <li>
 
-                    <div class="icon-link">
+                    <div class="icon-link" runat="server" visible="true">
                         <a href="#">
                             <i class="las la-stethoscope"></i>
                             <span class="link_name">Lab.</span>
@@ -119,7 +123,7 @@
                     </div>
                     <ul class="sub-menu">
                         <li> <a href='<%=Page.ResolveUrl("~/Hospital/AddDoctor.aspx") %>'>Add Doctor...!</a></li>
-                        <li><a href="#">IPD</a></li>
+                        <li><a href='<%=Page.ResolveUrl("~/Hospital/EmployeeInfo.aspx") %>'>Employee Info</a></li>
                         <li><a href="#">IPD</a></li>
                         <li><a href="#">IPD</a></li>
                     </ul>
@@ -131,6 +135,12 @@
                             <i class="las la-question"></i>
                             <span class="link_name">Help..?</span>
                         </a>
+                    </li>
+                 <li>
+                     <asp:LinkButton runat="server" ID="logout" OnClick="logout_Click">
+                           <i class="las la-question"></i>
+                            <span class="link_name">Logout</span>
+                     </asp:LinkButton>
                     </li>
 
 
